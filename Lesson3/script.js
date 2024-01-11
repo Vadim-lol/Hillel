@@ -12,6 +12,8 @@ else if (email.indexOf('@') == 0)
     personInfo.email = `not valid email <b>${email}</b> (symbol @ find in first place`;
 else if (email.slice(-1) == '@')
     personInfo.email = `not valid email <b>${email}</b> (symbol @ find in last place)`;
+else
+    personInfo.email = email;
 personInfo.age = yearBirth ? new Date().getFullYear() - yearBirth : 'Information not provided';
 
 for (let key in personInfo) {
