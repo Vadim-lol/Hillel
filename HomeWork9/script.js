@@ -18,7 +18,7 @@ for (let i = 0; i < arrA.length; i++) {
 
     for (let j = 2; (j <= arrA[i]/2) && (flag === 1); j++) {
         if (arrA[i] % j === 0)
-            flag=0;
+            flag = 0;
     }
     if (flag === 1) arrB.push(arrA[i]);
 }
