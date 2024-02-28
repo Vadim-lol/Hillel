@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Нотатник</title>
+</head>
+<body>
+<div class="container">
+    <h1>Нотатник</h1>
+    <div>
+        <textarea id="noteTextarea" placeholder="Почніть писати свої нотатки..."></textarea>
+        <input type="file" id="fileInput">
+        <label for="importantNote">Важлива нотатка:</label>
+        <input type="checkbox" id="importantNote">
+        <button onclick="saveNote()">Додати</button>
+    </div>
+    <ul id="notesList"></ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
